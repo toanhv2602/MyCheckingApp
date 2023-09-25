@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CheckingApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_string_menu">HOME</string>
+    <string name="profile_string_menu">PROFILE</string>
+    <string name="profile_string_checklog">CHECKLOG</string>
+
+</resources>

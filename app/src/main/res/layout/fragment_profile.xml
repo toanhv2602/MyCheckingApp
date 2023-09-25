@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ProfileFragment">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:padding="10dp"
+        android:id="@+id/img_userdetail"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/baseline_account_circle_24"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/userid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="chỗ này là id"
+        android:textSize="20dp"
+        android:layout_margin="30dp"
+        app:layout_constraintTop_toBottomOf="@id/img_userdetail"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="chỗ này là username"
+        android:textSize="20dp"
+        android:layout_margin="30dp"
+        app:layout_constraintTop_toBottomOf="@id/userid"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="chỗ này là tên đầy đủ"
+        android:textSize="20dp"
+        android:layout_margin="30dp"
+        app:layout_constraintTop_toBottomOf="@id/username"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/check_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="CHECKIN"
+        app:layout_constraintTop_toBottomOf="@+id/fullname" />
+    <Button
+        android:id="@+id/checkout_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="CHECKOUT"
+        app:layout_constraintTop_toBottomOf="@+id/check_btn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

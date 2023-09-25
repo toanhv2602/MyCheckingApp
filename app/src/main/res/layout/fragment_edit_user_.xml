@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ProfileFragment"
+    android:layout_margin="10dp"
+    android:background="@color/background">
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="ID"
+    android:id="@+id/ID_label"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tên đăng nhập"
+        android:textSize="20dp"
+        android:id="@+id/username_label"
+        app:layout_constraintTop_toBottomOf="@id/ID_label"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username_edit"
+        app:layout_constraintTop_toBottomOf="@id/username_label"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tên đầy đủ"
+        android:textSize="20dp"
+        android:id="@+id/fullname_label"
+        app:layout_constraintTop_toBottomOf="@+id/username_edit" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fullname_edit"
+        app:layout_constraintTop_toBottomOf="@id/fullname_label"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mật khẩu"
+        android:textSize="20dp"
+        android:id="@+id/password_label"
+        app:layout_constraintTop_toBottomOf="@+id/fullname_edit" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password_edit"
+        app:layout_constraintTop_toBottomOf="@id/password_label"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="260dp"
+        android:text="Update"
+        android:id="@+id/updatebtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_edit" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

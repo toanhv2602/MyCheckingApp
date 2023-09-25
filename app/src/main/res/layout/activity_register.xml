@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_Regis.LoginActivity"
+    android:background="@drawable/background">
+    <ImageView
+        android:id="@+id/logo_img"
+        android:layout_width="412dp"
+        android:layout_height="146dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/Username_box_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:hint="Tên đăng nhập"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_img" />
+    <EditText
+        android:id="@+id/Fullname_box_resgister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Username_box_register"
+        android:hint="Họ và tên"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/Password_box_resgister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Fullname_box_resgister"
+        android:inputType="textPassword"
+        android:hint="Mật khẩu"
+        tools:ignore="MissingConstraints" />
+    <EditText
+        android:id="@+id/Password_box_resgister_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Password_box_resgister"
+        android:inputType="textPassword"
+        android:hint="Nhập lại mật khẩu"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/Password_box_resgister_confirm"
+        android:textSize="20dp"
+        android:text="Đăng ký"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
